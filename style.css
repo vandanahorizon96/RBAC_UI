@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Subtle light background */
+    color: #333;
+    padding: 20px; /* Adds some spacing around the content */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto; /* Center the container */
+}
+
+h2, h4 {
+    color: #004085; /* Darker blue for a more elegant look */
+    margin-bottom: 20px; /* Adds space between headers and content */
+}
+
+.btn {
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+}
+
+.table td, .table th {
+    text-align: center;
+    padding: 10px; /* Increase padding for better readability */
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table td.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.table td.status-inactive {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-sm {
+    font-size: 14px; /* Slightly larger for better readability */
+}
+
+.edit-user, .edit-role, .edit-permission {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    padding: 6px 12px; /* Add padding for better button size */
+    cursor: pointer;
+}
+
+.edit-user:hover, .edit-role:hover, .edit-permission:hover {
+    background-color: #e0a800;
+}
+
+.delete-user, .delete-role, .delete-permission {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.delete-user:hover, .delete-role:hover, .delete-permission:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .table th, .table td {
+        font-size: 12px; /* Ensure text is readable on smaller screens */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .btn-sm {
+        font-size: 10px; /* Smaller button size for mobile */
+    }
+
+    .edit-user, .edit-role, .edit-permission, .delete-user, .delete-role, .delete-permission {
+        padding: 4px 8px; /* Adjust padding for smaller buttons */
+    }
+}
